@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Form1</title>
+</head>
+<body>
+
+    <form id="form1">
+        
+          <fieldset>
+            <legend>Formulario de abertura de crise</legend>
+
+                <fieldset>
+                    <legend>SOLICITANTE</legend>
+
+                    <Label for="nome">*Nome:</Label><br>
+                    <input type="text" name="nome" id="nome" placeholder=""><br>
+    
+                    <label for="matricula">*Matricula:</label><br>
+                    <input type="number" name="matricula" id="matricula"><br>
+
+                    <label for="email">*E-mail:</label><br>
+                    <input type="email" name="email" id="email"><br>
+
+                    <label for="telefone">*Ramal/Telefone:</label><br>
+                    <input type="number" name="telefone" id="telefone"><br>
+    
+                    
+
+                    
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>CRISE</legend>
+
+                    <label for="site">*Site:</label><br>
+                    <input type="text" name="site" id="site"><br>
+
+                    <label for="andar">*Andar:</label><br>
+                    <input type="text" name="andar" id="andar"><br>
+    
+                    <label for="op">*Oper:</label><br>
+                    <input type="text" name="op" id="op"><br>
+
+                    <label for="assunto">*Ferramenta Afetada:</label><br>
+                    <input type="text" name="assunto" id="assunto"> <br>
+
+                    <label for="qtd"></label>*Maquinas Afetadsa<br>
+                    <input type="number" name="qtd" id="qtd1">
+                    de
+                    <input type="number" name="qtd" id="qtd2"><br>
+                   
+                    <label for="descricao">*Descrição:</label><br>
+                    <textarea name="descricao" id="descricao" cols="19" rows="2"></textarea><br>
+               
+                    <label for="incio">*Início em</label>
+                    <input type="time" name="incio" id="incio"><br>
+
+                    <br>
+
+                    <label for="ticket">*Chamado:</label>
+                    <input type="text"><br>
+
+                    <input type="button" value="Gerar" onclick="gerar();" >
+
+                </fieldset>    
+               
+          </fieldset>
+
+
+    </form>
+    
+</body>
+</html>
