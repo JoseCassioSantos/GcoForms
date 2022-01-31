@@ -47,7 +47,10 @@ formcont.horario = tincio.value
 formcont.chamado = tticket.value
 
 
-   document.getElementById('res').innerHTML = `${formcont.email} ${formcont.ramal}  ${formcont.andar}`
+   document.getElementById('res').innerHTML = 
+   "E-mail:" +formcont.email+
+  "Telefone:" +formcont.ramal+ 
+    " Andar: " +formcont.andar+ 
     
     
 
