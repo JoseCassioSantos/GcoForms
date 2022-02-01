@@ -47,7 +47,8 @@ formcont.horario = tincio.value
 formcont.chamado = tticket.value
 
 
-   document.getElementById('res').innerHTML += "Nome:"+formcont.nome+ "<br> Matricula:"+formcont.matricula+"<br> E-mail:" +formcont.email+ "<br> Telefone:" +formcont.ramal+ "<br> Andar:"  +formcont.andar+ "<br> Site:" +formcont.site+
+   document.getElementById('res').innerHTML = "Nome :"+formcont.nome+ "<br> Matricula: "+formcont.matricula+"<br> E-mail: " +formcont.email+ "<br> Telefone: " +formcont.ramal+ "<br> Andar: "  +formcont.site+ "<br> Site: " +formcont.andar+ "<br> Opreração: " +formcont.op+ "<br> Ferramenta Afetada: " +formcont.ferramenta+
+   "<br>Maquinas Afetadas: " +formcont.maquinas1+ " de " +formcont.maquinas2+ "<br> Descrição:" +formcont.descricao+ "<br>Inicio em: "  +formcont.horario+ "<br> Chamado: "+formcont.chamado+ "."
     
     
 
