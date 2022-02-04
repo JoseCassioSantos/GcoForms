@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+ 
+}
+body {
+
+  display: flex;
+
+}
+
+#res{
+ 
+  background: rgb(181, 220, 238);
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+
+}
+
+#form1{
+margin: 10px;
+padding: 10px;
+width: 100%;
+color: #747474;
+
+
+}
+
+#form1 legend{
+  font-size: 18px;
+ 
+}
+
+
+
+#form1 fieldset{
+  padding: 10px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #747474
+}
+
+#btn{
+  padding: 5px 15px;
+  font-size: 15px;
+  background: #2e6cb3;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+}
+
+#btn:hover{
+  background: #419dbf
+}
