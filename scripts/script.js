@@ -1,3 +1,7 @@
+
+
+
+
 function gerar(){
 
     let tnome = document.getElementById('nome')
@@ -51,12 +55,12 @@ formcont.chamado = tticket.value
    "<br>Maquinas Afetadas: " +formcont.maquinas1+ " de " +formcont.maquinas2+ "<br> Descrição:<pre>" +formcont.descricao+ "<pre><br>Inicio em: "  +formcont.horario+ "<br> Chamado: "+formcont.chamado+ "."
     
 
-    console.log(res)
 
     let content = res.innerText
 
-    console.log(content)
+    document.getElementById('res1').innerText = content
     
-}
 
 
+
+} 

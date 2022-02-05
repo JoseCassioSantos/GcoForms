@@ -23,6 +23,16 @@ body {
 
 }
 
+
+#res1{
+ 
+  background: rgb(181, 220, 238);
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+
+}
+
 #form1{
 margin: 10px;
 padding: 10px;
