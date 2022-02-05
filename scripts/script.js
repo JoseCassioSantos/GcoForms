@@ -51,7 +51,11 @@ formcont.chamado = tticket.value
    "<br>Maquinas Afetadas: " +formcont.maquinas1+ " de " +formcont.maquinas2+ "<br> Descrição:<pre>" +formcont.descricao+ "<pre><br>Inicio em: "  +formcont.horario+ "<br> Chamado: "+formcont.chamado+ "."
     
 
-    console.log(formcont)
+    console.log(res)
+
+    let content = res.innerText
+
+    console.log(content)
     
 }
 
