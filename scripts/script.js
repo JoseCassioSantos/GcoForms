@@ -59,9 +59,63 @@ let content = res1.innerText
 
 localStorage.setItem(formcont.chamado, content)
 
-document.getElementById("res1").innerText += localStorage.getItem(formcont.chamado)
+document.getElementById("titulo").innerText = formcont.chamado
+
+document.getElementById("notes").innerHTML = localStorage.getItem(formcont.chamado)
+
+
 
 console.log(content)
  
 
 } 
+
+onload= function() {
+  
+  
+  
+    lista = localStorage.length
+  
+    for(let i = 0; i < lista; i++ ){
+  
+      let name = localStorage.key(i)
+      let onclick = document.createAttribute('onclick')
+      let sclass = document.createAttribute('class')
+      let btn = document.createElement('button')
+      onclick.value ="backlist("+i+")"
+      sclass.value = "btn2"
+      btn.innerHTML = name
+      btn.setAttributeNode(sclass)
+      btn.setAttributeNode(onclick)
+      document.getElementById('minhaLista').appendChild(btn)
+     
+    }
+    
+    
+   
+  }
+  
+  function copy() {
+  
+    var copyText = document.getElementById("notes");
+  
+    
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); 
+  
+  
+    navigator.clipboard.writeText(copyText.value);
+    
+    
+  }
+
+   function backlist(x){
+    let rnota = document.getElementById('notes')
+    let rtitulo = document.getElementById('titulo')
+  
+    rtitulo.innerHTML = localStorage.key(x)
+    rnota.innerHTML = localStorage.getItem(localStorage.key(x))
+  
+    
+    
+  }
