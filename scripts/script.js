@@ -55,12 +55,13 @@ formcont.chamado = tticket.value
    "<br>Maquinas Afetadas: " +formcont.maquinas1+ " de " +formcont.maquinas2+ "<br> Descrição:<pre>" +formcont.descricao+ "<pre><br>Inicio em: "  +formcont.horario+ "<br> Chamado: "+formcont.chamado+ "."
     
 
+let content = res1.innerText
 
+localStorage.setItem(formcont.chamado, content)
 
+document.getElementById("res1").innerText += localStorage.getItem(formcont.chamado)
 
-    
-    
-
-
+console.log(content)
+ 
 
 } 
