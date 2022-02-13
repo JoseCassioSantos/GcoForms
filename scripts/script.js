@@ -51,7 +51,7 @@ formcont.horario = tincio.value
 formcont.chamado = tticket.value
 
 
-   document.getElementById('res1').innerHTML = "<h3>"+formcont.ferramenta+"</h3><br>Nome :"+formcont.nome+ "<br> Matricula: "+formcont.matricula+"<br> E-mail: " +formcont.email+ "<br> Telefone: " +formcont.ramal+ "<br> Andar: "  +formcont.site+ "<br> Site: " +formcont.andar+ "<br> Opreração: " +formcont.op+ "<br> Ferramenta Afetada: " +formcont.ferramenta+
+   document.getElementById('res1').innerHTML = "<h3>"+formcont.ferramenta+"</h3><br>Nome :"+formcont.nome+ "<br> Matricula: "+formcont.matricula+"<br> E-mail: " +formcont.email+ "<br> Telefone: " +formcont.ramal+ "<br> Andar: "  +formcont.andar+ "<br> Site: " +formcont.site+ "<br> Opreração: " +formcont.op+ "<br> Ferramenta Afetada: " +formcont.ferramenta+
    "<br>Maquinas Afetadas: " +formcont.maquinas1+ " de " +formcont.maquinas2+ "<br> Descrição:<pre>" +formcont.descricao+ "<pre><br>Inicio em: "  +formcont.horario+ "<br> Chamado: "+formcont.chamado+ "."
     
 
@@ -106,6 +106,22 @@ onload= function() {
   
     navigator.clipboard.writeText(copyText.value);
     
+    
+  }
+
+  function apaga(){
+    let txtnotas = document.getElementById('notes')
+    let tituloN = document.getElementById('titulo')
+  
+    
+     titulo = tituloN.value 
+     nota = txtnotas.value 
+     
+
+        localStorage.removeItem(titulo, nota)
+      
+         document.location.reload(true)
+     
     
   }
 
